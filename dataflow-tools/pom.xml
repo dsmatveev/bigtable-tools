@@ -12,18 +12,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-<!--
-  To run the samples:
-
-    mvn package exec:exec -DHelloWorldWrite -Dbigtable.projectID=<projectID> -Dbigtable.instanceID=<instanceID> -Dgs=<Your bucket>
-
-    mvn package exec:exec -DSourceRowCount -Dbigtable.projectID=<projectID> -Dbigtable.instanceID=<instanceID> -Dgs=<Your bucket>
-
-    mvn package exec:exec -DPubsubWordCount -Dbigtable.projectID=<projectID> -Dbigtable.instanceID=<instanceID> -Dgs=<Your bucket> -DpubsubTopic=projects/ProjectID/topics/TopicID
-
-    Optional Arguments
-      -Dbigtable.table=<Table to Read / Write>
--->
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.dsmatveev</groupId>
@@ -135,13 +123,6 @@ limitations under the License.
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.6</version>
-                <!--<configuration>-->
-                    <!--<archive>-->
-                        <!--<manifest>-->
-                            <!--<mainClass>com.example.bigtable.sample.WordCountDriver</mainClass>-->
-                        <!--</manifest>-->
-                    <!--</archive>-->
-                <!--</configuration>-->
             </plugin>
 
         </plugins>
